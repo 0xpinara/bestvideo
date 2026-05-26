@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#FAF4EC" />
+<meta name="color-scheme" content="light dark" />
+
+<!-- Primary SEO -->
+<title>Lumen Studio · AI Video Maker, Voice, Dubbing, Music & Avatars</title>
+<meta name="description" content="Lumen Studio is the all-in-one AI creator app: AI video, voice generation, sound effects, music, dubbing in 30+ languages, AI avatars, lip-sync, captions, and more. Free to start. iOS, Android, and Web." />
+<meta name="keywords" content="ai video maker, ai voice generator, ai music generator, sound effects, text to speech, ai dubbing, ai avatar, lip sync, video translator, auto captions, voice changer, voice isolator, transcribe, podcast generator, ai image generator" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<link rel="canonical" href="https://lumenstudio.app/" />
+<link rel="manifest" href="/manifest.webmanifest" />
+
+<!-- Apple -->
+<meta name="apple-itunes-app" content="app-id=0000000000, app-argument=https://lumenstudio.app/" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Lumen" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Lumen Studio" />
+<meta property="og:title" content="Lumen Studio · AI Video, Voice, Music & Avatars in one app" />
+<meta property="og:description" content="Type a sentence, get a finished video. AI video, voice, music, dubbing, captions, avatars and more. Free to start." />
+<meta property="og:url" content="https://lumenstudio.app/" />
+<meta property="og:image" content="https://lumenstudio.app/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@lumenstudio" />
+<meta name="twitter:title" content="Lumen Studio · AI Video, Voice, Music & Avatars" />
+<meta name="twitter:description" content="Type a sentence, get a finished video. AI video, voice, music, dubbing, captions, avatars." />
+<meta name="twitter:image" content="https://lumenstudio.app/assets/og-cover.png" />
+
+<!-- JSON-LD: MobileApplication, Organization, FAQPage all live in /site/index.html
+     (the marketing page) so they're SSR'd. This /web/ root is the JS app shell. -->
+
+<!-- Critical CSS: shows brand-correct skeleton before the React bundle hydrates,
+     so Lighthouse + users see a styled page instantly (huge SEO + Core Web Vitals win). -->
+<style>
+  :root { color-scheme: light dark; }
+  html, body, #root { height: 100%; margin: 0; padding: 0; }
+  body {
+    background: #FAF4EC;
+    color: #2A1F17;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior-y: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1B1612; color: #F4ECDE; }
+  }
+  /* Pre-hydration skeleton — matches the in-app Ghibli home so the FCP feels real */
+  .ls-skeleton { padding: 24px 18px; max-width: 720px; margin: 0 auto; }
+  .ls-eyebrow {
+    font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase;
+    color: #8C7A66; margin: 8px 0 6px;
+  }
+  .ls-title {
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size: 34px; line-height: 1.06; letter-spacing: -0.3px;
+    margin: 0 0 18px;
+  }
+  .ls-hero {
+    background: linear-gradient(160deg, #FBE5DA, #F6C6A7);
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: 0 18px 36px rgba(122,90,46,0.15);
+    margin-bottom: 24px;
+  }
+  .ls-hero h2 {
+    font-family: Georgia, serif;
+    font-size: 28px; line-height: 1.1;
+    margin: 6px 0 8px;
+    color: #3D1F11;
+  }
+  .ls-hero p { color: #7B3D24; margin: 0 0 18px; }
+  .ls-cta {
+    display: inline-block; background: #C96442; color: #fff;
+    padding: 12px 18px; border-radius: 999px; font-weight: 700;
+    text-decoration: none;
+  }
+  .ls-tile-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .ls-tile {
+    background: #FFFBF4; border: 1px solid #EADFCB;
+    border-radius: 22px; padding: 18px;
+    box-shadow: 0 12px 24px rgba(122,90,46,0.06);
+  }
+  .ls-tile strong { display: block; margin-top: 10px; font-size: 16px; }
+  .ls-tile span { color: #8C7A66; font-size: 13px; }
+  .ls-dot {
+    width: 38px; height: 38px; border-radius: 12px;
+    background: linear-gradient(135deg, #F6C6A7, #C96442);
+  }
+  /* Hide skeleton once React mounts */
+  body.hydrated .ls-skeleton { display: none; }
+  /* Hide React root before hydrated so it doesn't flash */
+  body:not(.hydrated) #root > * { display: none; }
+</style>
+
+<!-- Pre-bind hydration flag so we never see a FOUC -->
+<script>
+  if ('MutationObserver' in window) {
+    new MutationObserver(function () {
+      var root = document.getElementById('root');
+      if (root && root.firstChild) {
+        document.body.classList.add('hydrated');
+      }
+    }).observe(document.documentElement, { childList: true, subtree: true });
+  }
+</script>
+</head>
+<body>
+<!-- SEO-friendly, server-rendered skeleton: every word here is indexable -->
+<noscript>
+  <div class="ls-skeleton">
+    <p class="ls-eyebrow">Lumen Studio</p>
+    <h1 class="ls-title">Turn a sentence into a finished video.</h1>
+    <p>The all-in-one AI creator app: video generation, voice cloning, AI music, dubbing, captions, avatars and more. Install the app for the full experience.</p>
+    <p><a class="ls-cta" href="https://apps.apple.com/app/id0000000000">Open in App Store</a></p>
+  </div>
+</noscript>
+
+<div class="ls-skeleton" aria-hidden="true">
+  <p class="ls-eyebrow">Studio</p>
+  <h1 class="ls-title">Make something today</h1>
+  <div class="ls-hero">
+    <p class="ls-eyebrow" style="color:#9A4B2E">+ NEW BLANK PROJECT</p>
+    <h2>Create a video, gently and freely.</h2>
+    <p>Pick a tool below or open the canvas to start with a blank scene.</p>
+    <a class="ls-cta" href="#">+ Create video</a>
+  </div>
+  <div class="ls-tile-grid">
+    <div class="ls-tile"><div class="ls-dot"></div><strong>AI video</strong><span>Text or image to scene</span></div>
+    <div class="ls-tile"><div class="ls-dot" style="background:linear-gradient(135deg,#F6C6A7,#F19F73)"></div><strong>Faceless video</strong><span>Script → narrated short</span></div>
+    <div class="ls-tile"><div class="ls-dot" style="background:linear-gradient(135deg,#F4B6C2,#E48BA0)"></div><strong>AI avatar</strong><span>Talking-head video</span></div>
+    <div class="ls-tile"><div class="ls-dot" style="background:linear-gradient(135deg,#A8D5E5,#6DB7CE)"></div><strong>Storyboard</strong><span>Multi-shot scenes</span></div>
+  </div>
+</div>
+
+<div id="root"></div>
+
+<!-- The Expo Metro bundler injects the script tag here automatically -->
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#FAF4EC" />
+<title>Build a voice agent in an evening · Lumen Studio</title>
+<meta name="description" content="System prompt, voice, knowledge base, temperature — the four levers that turn a chatbot into a believable, useful, human-feeling conversational agent." />
+<meta name="keywords" content="voice agent, conversational ai, chatbot, elevenagents" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://lumenstudio.app/articles/voice-agent.html" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/anim.css" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Build a voice agent in an evening" />
+<meta property="og:description" content="System prompt, voice, knowledge base, temperature — the four levers that turn a chatbot into a believable, useful, human-feeling conversational agent." />
+<meta property="og:url" content="https://lumenstudio.app/articles/voice-agent.html" />
+<meta property="og:image" content="https://lumenstudio.app/assets/og-cover.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Build a voice agent in an evening" />
+<meta name="twitter:description" content="System prompt, voice, knowledge base, temperature — the four levers that turn a chatbot into a believable, useful, human-feeling conversational agent." />
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Lumen Studio","item":"https://lumenstudio.app/"},{"@type":"ListItem","position":2,"name":"Tutorials","item":"https://lumenstudio.app/articles/"},{"@type":"ListItem","position":3,"name":"Build a voice agent in an evening","item":"https://lumenstudio.app/articles/voice-agent.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Build a voice agent in an evening","description":"System prompt, voice, knowledge base, temperature — the four levers that turn a chatbot into a believable, useful, human-feeling conversational agent.","author":{"@type":"Organization","name":"Lumen Studio"},"publisher":{"@type":"Organization","name":"Lumen Studio","logo":"https://lumenstudio.app/assets/icon-512.png"},"image":"https://lumenstudio.app/assets/og-cover.png","datePublished":"2026-05-25","dateModified":"2026-05-25","mainEntityOfPage":"https://lumenstudio.app/articles/voice-agent.html"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">L</span>
+      <span>Lumen Studio</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#tools">Tools</a>
+      <a href="/articles/">Learn</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn btn-ghost" href="/login.html">Sign in</a>
+      <a class="btn btn-primary" href="/signup.html">Get started</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Header art -->
+<section style="padding: 56px 0 36px; position: relative; overflow: hidden;">
+  <img src="/assets/svg/cloud.svg" alt="" class="anim-drift parallax" data-depth="0.15"
+       style="position:absolute; top: 24px; left: -30px; width: 200px; opacity: 0.55;"/>
+  <img src="/assets/svg/cloud.svg" alt="" class="anim-drift-rev parallax" data-depth="0.10"
+       style="position:absolute; top: 110px; right: -20px; width: 160px; opacity: 0.45;"/>
+  <span class="sparkle" style="position:absolute; top: 90px; left: 12%;"></span>
+
+  <div class="narrow" style="position: relative;">
+    <p class="article-meta fade-up" style="margin-bottom: 14px;">
+      <a href="/articles/" style="color: var(--ink-muted);">Tutorials</a>
+      <span style="color: var(--ink-faint);">›</span>
+      <span style="color: var(--ink-muted);">Voice</span>
+    </p>
+    <h1 class="fade-up delay-1" style="font-family: var(--serif); font-size: clamp(34px, 5vw, 50px); line-height: 1.1; letter-spacing: -0.3px;">Build a voice agent in an evening</h1>
+    <p class="lede fade-up delay-2" style="margin-top: 12px;">System prompt, voice, knowledge base, temperature — the four levers that turn a chatbot into a believable, useful, human-feeling conversational agent.</p>
+
+    <div class="row fade-up delay-3" style="margin-top: 22px; gap: 8px; flex-wrap: wrap; align-items: center;">
+      <div class="icon-badge lavender" style="width: 38px; height: 38px; margin-bottom: 0;">
+        <svg width="20" height="20"><use href="/assets/svg/icons.svg#chat"/></svg>
+      </div>
+      <span class="chip dot">Advanced</span>
+      <span class="chip">9 min read</span>
+      <span class="chip">Updated 2026-05-25</span>
+    </div>
+  </div>
+</section>
+
+<!-- Body -->
+<article class="narrow article-body fade-up" style="padding-bottom: 80px;">
+<p>Voice Agents are conversational AIs that can be called or embedded. Lumen wraps ElevenAgents so you can build one without writing code.</p>
+<h2>The four levers</h2>
+<ul><li><strong>System prompt</strong> — defines who the agent is and what it should do. Most important.</li><li><strong>Voice</strong> — defines how the agent sounds. Pick one your callers will want to listen to.</li><li><strong>Knowledge base</strong> — what the agent knows. Paste in product docs, FAQs, or your bio.</li><li><strong>Temperature</strong> — how creative vs focused. Lower for support agents, higher for creative companions.</li></ul>
+<h2>Writing a system prompt</h2>
+<p>The best system prompts have four parts:</p>
+<ol><li><strong>Identity</strong> — who you are. (“You are a calm receptionist for an indie design studio.”)</li><li><strong>Goal</strong> — what you're trying to accomplish. (“Help callers schedule consultations.”)</li><li><strong>Rules</strong> — what you must and must not do. (“Always offer to email a confirmation. Never quote prices.”)</li><li><strong>Style</strong> — how you talk. (“Use short, warm sentences. Never use jargon.”)</li></ol>
+<h2>Greeting</h2>
+<p>The greeting is the first line the agent says when a conversation starts. Make it short, warm, and end with a clear question that prompts the user to speak. Bad: “Hello, I am the AI assistant. How may I help you today?” Good: “Hi, thanks for calling. What can I help you with?”</p>
+<h2>Knowledge base</h2>
+<p>Paste documents directly. The agent will retrieve from them when relevant. Don't dump everything — quality beats quantity. A focused 5-page brief outperforms a 200-page dump.</p>
+<h2>Temperature</h2>
+<p>0.2-0.4 for support and FAQ agents (stay on-script).<br/>0.5-0.7 for sales and onboarding (be flexible but reliable).<br/>0.8-1.0 for creative companions and storytellers (be inventive).</p>
+<h2>After you train</h2>
+<p>Lumen gives you three deployment options: call (phone number), embed (web widget), or API (your own app). Start with embed — it's the fastest to test and the cheapest to run.</p>
+</article>
+
+<!-- Prev / Next -->
+<section class="narrow tight" style="padding-top: 24px; border-top: 1px solid var(--hairline);">
+  <div class="row" style="justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+    <a class="btn btn-secondary" href="/articles/voice-library.html">← Find the perfect community voice</a>
+    <a class="btn btn-primary" href="/articles/audio-native.html">Add a beautiful audio player to any article →</a>
+  </div>
+</section>
+
+<!-- Try it CTA -->
+<section style="padding: 32px 0 80px;">
+  <div class="narrow">
+    <div class="card fade-up" style="background: linear-gradient(135deg, var(--peach-tint), var(--peach)); border: none; text-align: center; padding: 36px;">
+      <h2 style="color: var(--terracotta-deep); margin-bottom: 6px;">Try it now.</h2>
+      <p style="color: var(--terracotta-deep); opacity: 0.85; max-width: 50ch; margin: 0 auto 22px;">
+        The fastest way to learn is to make. Open Lumen Studio and try the steps above on your own footage.
+      </p>
+      <a class="btn btn-primary btn-lg" href="/signup.html">Start free in 20 seconds</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/" style="margin-bottom: 14px;">
+          <span class="brand-mark">L</span>
+          <span>Lumen Studio</span>
+        </a>
+        <p class="subtle" style="max-width: 36ch; margin-top: 12px;">A whole video studio, gently in your pocket.</p>
+      </div>
+      <div><h4>Product</h4><a href="/#tools">Tools</a><a href="/#pricing">Pricing</a><a href="/articles/">Tutorials</a></div>
+      <div><h4>Company</h4><a href="#">About</a><a href="/legal/support.html">Support</a></div>
+      <div><h4>Legal</h4><a href="/legal/privacy.html">Privacy</a><a href="/legal/terms.html">Terms</a></div>
+    </div>
+    <div class="copy">
+      <p>© <span data-year>2026</span> Lumen Studio.</p>
+      <p><a href="/login.html">Sign in</a> · <a href="/signup.html">Get started</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/anim.js" defer></script>
+</body>
+</html>

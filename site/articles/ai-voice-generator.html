@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#FAF4EC" />
+<title>Pick the right voice and dial it in · Lumen Studio</title>
+<meta name="description" content="Stability, similarity, style — the three sliders in Lumen's text-to-speech that change everything. With examples of what each one does." />
+<meta name="keywords" content="text to speech, ai voice generator, tts, elevenlabs" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://lumenstudio.app/articles/ai-voice-generator.html" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/anim.css" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Pick the right voice and dial it in" />
+<meta property="og:description" content="Stability, similarity, style — the three sliders in Lumen's text-to-speech that change everything. With examples of what each one does." />
+<meta property="og:url" content="https://lumenstudio.app/articles/ai-voice-generator.html" />
+<meta property="og:image" content="https://lumenstudio.app/assets/og-cover.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pick the right voice and dial it in" />
+<meta name="twitter:description" content="Stability, similarity, style — the three sliders in Lumen's text-to-speech that change everything. With examples of what each one does." />
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Lumen Studio","item":"https://lumenstudio.app/"},{"@type":"ListItem","position":2,"name":"Tutorials","item":"https://lumenstudio.app/articles/"},{"@type":"ListItem","position":3,"name":"Pick the right voice and dial it in","item":"https://lumenstudio.app/articles/ai-voice-generator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Pick the right voice and dial it in","description":"Stability, similarity, style — the three sliders in Lumen's text-to-speech that change everything. With examples of what each one does.","author":{"@type":"Organization","name":"Lumen Studio"},"publisher":{"@type":"Organization","name":"Lumen Studio","logo":"https://lumenstudio.app/assets/icon-512.png"},"image":"https://lumenstudio.app/assets/og-cover.png","datePublished":"2026-05-25","dateModified":"2026-05-25","mainEntityOfPage":"https://lumenstudio.app/articles/ai-voice-generator.html"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">L</span>
+      <span>Lumen Studio</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#tools">Tools</a>
+      <a href="/articles/">Learn</a>
+      <a href="/#pricing">Pricing</a>
+      <a class="btn btn-ghost" href="/login.html">Sign in</a>
+      <a class="btn btn-primary" href="/signup.html">Get started</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Header art -->
+<section style="padding: 56px 0 36px; position: relative; overflow: hidden;">
+  <img src="/assets/svg/cloud.svg" alt="" class="anim-drift parallax" data-depth="0.15"
+       style="position:absolute; top: 24px; left: -30px; width: 200px; opacity: 0.55;"/>
+  <img src="/assets/svg/cloud.svg" alt="" class="anim-drift-rev parallax" data-depth="0.10"
+       style="position:absolute; top: 110px; right: -20px; width: 160px; opacity: 0.45;"/>
+  <span class="sparkle" style="position:absolute; top: 90px; left: 12%;"></span>
+
+  <div class="narrow" style="position: relative;">
+    <p class="article-meta fade-up" style="margin-bottom: 14px;">
+      <a href="/articles/" style="color: var(--ink-muted);">Tutorials</a>
+      <span style="color: var(--ink-faint);">›</span>
+      <span style="color: var(--ink-muted);">Voice</span>
+    </p>
+    <h1 class="fade-up delay-1" style="font-family: var(--serif); font-size: clamp(34px, 5vw, 50px); line-height: 1.1; letter-spacing: -0.3px;">Pick the right voice and dial it in</h1>
+    <p class="lede fade-up delay-2" style="margin-top: 12px;">Stability, similarity, style — the three sliders in Lumen's text-to-speech that change everything. With examples of what each one does.</p>
+
+    <div class="row fade-up delay-3" style="margin-top: 22px; gap: 8px; flex-wrap: wrap; align-items: center;">
+      <div class="icon-badge terra" style="width: 38px; height: 38px; margin-bottom: 0;">
+        <svg width="20" height="20"><use href="/assets/svg/icons.svg#mic"/></svg>
+      </div>
+      <span class="chip dot">Beginner</span>
+      <span class="chip">6 min read</span>
+      <span class="chip">Updated 2026-05-25</span>
+    </div>
+  </div>
+</section>
+
+<!-- Body -->
+<article class="narrow article-body fade-up" style="padding-bottom: 80px;">
+<p>The voices in Lumen are the same studio-grade voices you'd pay for in the biggest TTS platforms. The three sliders below them are what most people miss.</p>
+<h2>Stability</h2>
+<p>Stability controls how consistent the voice is across the read. Lower stability means more emotional range — pauses, sighs, energetic accents. Higher stability means a steadier, more predictable read.</p>
+<ul><li><strong>0.3</strong> — expressive, theatrical. Audiobooks, dialogue, storytelling.</li><li><strong>0.5</strong> — balanced. The default for most uses.</li><li><strong>0.8</strong> — flat, consistent. Tutorials, news, voiceover.</li></ul>
+<h2>Similarity</h2>
+<p>Similarity controls how closely the output matches the original voice sample. Higher similarity preserves more of the original voice's quirks — accent thickness, breath patterns, micro-pauses.</p>
+<p>For most purposes, leave this at <strong>0.75</strong>. Bump it to 0.9 if you're cloning your own voice and want maximum resemblance.</p>
+<h2>Style exaggeration</h2>
+<p>This one is subtle. At 0 it neutralises the voice's personality. At 1 it cranks the voice's defining traits to 11. For most voices, leaving this at 0.1-0.2 produces the most natural read. Push it to 0.5+ only for characters that should feel exaggerated.</p>
+<h2>Speaker boost</h2>
+<p>A small CPU bump that improves resemblance to the original. Worth turning on for hero content.</p>
+<h2>Writing for TTS</h2>
+<p>Use ellipses for thinking pauses. Use em-dashes for sharp breaks. Use commas generously. Avoid abbreviations — write “Doctor” instead of “Dr.” because TTS reads punctuation literally.</p>
+</article>
+
+<!-- Prev / Next -->
+<section class="narrow tight" style="padding-top: 24px; border-top: 1px solid var(--hairline);">
+  <div class="row" style="justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+    <a class="btn btn-secondary" href="/articles/video-to-music.html">← Score your video automatically</a>
+    <a class="btn btn-primary" href="/articles/ai-music-generator.html">Write a full song from a single prompt →</a>
+  </div>
+</section>
+
+<!-- Try it CTA -->
+<section style="padding: 32px 0 80px;">
+  <div class="narrow">
+    <div class="card fade-up" style="background: linear-gradient(135deg, var(--peach-tint), var(--peach)); border: none; text-align: center; padding: 36px;">
+      <h2 style="color: var(--terracotta-deep); margin-bottom: 6px;">Try it now.</h2>
+      <p style="color: var(--terracotta-deep); opacity: 0.85; max-width: 50ch; margin: 0 auto 22px;">
+        The fastest way to learn is to make. Open Lumen Studio and try the steps above on your own footage.
+      </p>
+      <a class="btn btn-primary btn-lg" href="/signup.html">Start free in 20 seconds</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/" style="margin-bottom: 14px;">
+          <span class="brand-mark">L</span>
+          <span>Lumen Studio</span>
+        </a>
+        <p class="subtle" style="max-width: 36ch; margin-top: 12px;">A whole video studio, gently in your pocket.</p>
+      </div>
+      <div><h4>Product</h4><a href="/#tools">Tools</a><a href="/#pricing">Pricing</a><a href="/articles/">Tutorials</a></div>
+      <div><h4>Company</h4><a href="#">About</a><a href="/legal/support.html">Support</a></div>
+      <div><h4>Legal</h4><a href="/legal/privacy.html">Privacy</a><a href="/legal/terms.html">Terms</a></div>
+    </div>
+    <div class="copy">
+      <p>© <span data-year>2026</span> Lumen Studio.</p>
+      <p><a href="/login.html">Sign in</a> · <a href="/signup.html">Get started</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/anim.js" defer></script>
+</body>
+</html>

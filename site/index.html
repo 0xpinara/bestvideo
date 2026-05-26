@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#FAF4EC" />
+<meta name="color-scheme" content="light dark" />
+
+<title>Lumen Studio · A whole video studio, gently in your pocket</title>
+<meta name="description" content="Lumen Studio is an all-in-one AI creator app for video, voice, music, and dubbing — beautiful, calm, and free to start. Generate cinematic videos, narrated shorts, AI avatars, full songs and more from a single sentence. iOS, Android, and Web." />
+<meta name="keywords" content="ai video maker, ai voice generator, ai music generator, sound effects, text to speech, ai dubbing, ai avatar, lip sync, video translator, auto captions, podcast generator, ai image generator" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+<link rel="canonical" href="https://lumenstudio.app/" />
+<link rel="manifest" href="/manifest.webmanifest" />
+
+<link rel="preload" href="/assets/svg/scene.svg" as="image" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/anim.css" />
+
+<meta name="apple-itunes-app" content="app-id=0000000000, app-argument=https://lumenstudio.app/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Lumen Studio" />
+<meta property="og:title" content="Lumen Studio · A whole video studio, gently in your pocket" />
+<meta property="og:description" content="All-in-one AI for video, voice, music, dubbing and more. Beautiful, calm, free to start." />
+<meta property="og:url" content="https://lumenstudio.app/" />
+<meta property="og:image" content="https://lumenstudio.app/assets/og-cover.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Lumen Studio · A whole video studio, gently in your pocket" />
+<meta name="twitter:description" content="All-in-one AI for video, voice, music, dubbing and more." />
+<meta name="twitter:image" content="https://lumenstudio.app/assets/og-cover.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Lumen Studio",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Web · iOS 15+ · Android 9+",
+  "url": "https://lumenstudio.app/",
+  "description": "All-in-one AI creator app for video, voice, music and dubbing.",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "1280"}
+}
+</script>
+</head>
+<body>
+
+<!-- Inlined SVG icon sprite (loads once, free) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <use href="/assets/svg/icons.svg#video"/>
+</svg>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="/">
+      <span class="brand-mark">L</span>
+      <span>Lumen Studio</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#tools">Tools</a>
+      <a href="/articles/">Learn</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn btn-ghost" href="/login.html">Sign in</a>
+      <a class="btn btn-primary" href="/signup.html">Get started</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" style="padding: 56px 0 96px; position: relative; overflow: hidden;">
+  <!-- Falling petal field (JS-spawned) -->
+  <div class="petal-field" aria-hidden="true"></div>
+
+  <!-- Hero scene background -->
+  <img class="parallax" data-depth="0.08" src="/assets/svg/scene.svg" alt=""
+       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:0.9;" />
+
+  <!-- Drifting clouds -->
+  <img src="/assets/svg/cloud.svg" alt="" class="anim-drift parallax"
+       data-depth="0.18"
+       style="position:absolute; top:62px; left:-30px; width:240px; z-index:1; opacity:0.95;" />
+  <img src="/assets/svg/cloud.svg" alt="" class="anim-drift-rev parallax"
+       data-depth="0.10"
+       style="position:absolute; top:140px; right:-40px; width:200px; z-index:1; opacity:0.8;" />
+  <img src="/assets/svg/cloud.svg" alt="" class="anim-drift parallax"
+       data-depth="0.22"
+       style="position:absolute; top:260px; left:35%; width:160px; z-index:1; opacity:0.7;" />
+
+  <!-- Fireflies layer -->
+  <div aria-hidden="true" style="position:absolute; inset:0; pointer-events:none; z-index:1;">
+    <span class="firefly" style="top:18%; left:14%; animation-delay:0s;"></span>
+    <span class="firefly" style="top:42%; left:8%;  animation-delay:1.4s;"></span>
+    <span class="firefly" style="top:68%; left:22%; animation-delay:2.1s;"></span>
+    <span class="firefly" style="top:30%; left:74%; animation-delay:0.8s;"></span>
+    <span class="firefly" style="top:60%; left:84%; animation-delay:1.8s;"></span>
+  </div>
+
+  <!-- Sparkles -->
+  <span class="sparkle" style="position:absolute; top:130px; left:46%; z-index:2;"></span>
+  <span class="sparkle" style="position:absolute; top:90px; right:32%; z-index:2; transform: scale(0.7);"></span>
+
+  <div class="wrap" style="position: relative; z-index: 3;">
+    <div style="max-width: 720px;">
+      <p class="eyebrow fade-up"><span class="dot"></span> A whole studio · gently in your pocket</p>
+      <h1 class="display fade-up delay-1">Turn a sentence<br/>into a finished video.</h1>
+      <p class="lede fade-up delay-2">
+        Lumen Studio is the all-in-one AI creator app — video, voice, music,
+        dubbing, avatars and more — wrapped in a calm, hand-drawn interface
+        you'll actually enjoy opening.
+      </p>
+
+      <div class="row fade-up delay-3" style="margin-top: 28px; gap: 12px; flex-wrap: wrap;">
+        <a class="btn btn-primary btn-lg" href="/signup.html">
+          <span>Start creating, free</span>
+          <svg width="18" height="18"><use href="/assets/svg/icons.svg#arrow-right"/></svg>
+        </a>
+        <a class="btn btn-secondary btn-lg" href="/articles/">
+          <svg width="18" height="18"><use href="/assets/svg/icons.svg#document"/></svg>
+          <span>Read the guides</span>
+        </a>
+      </div>
+
+      <div class="row fade-up delay-4" style="margin-top: 32px; gap: 18px; flex-wrap: wrap; align-items:center;">
+        <span class="chip dot">No card required</span>
+        <span class="chip">25+ tools</span>
+        <span class="chip">30+ languages</span>
+        <span class="chip">iOS · Android · Web</span>
+      </div>
+    </div>
+
+    <!-- Mascot floating to the right (hidden on mobile via .hero-mascot) -->
+    <img src="/assets/svg/character.svg" alt=""
+         class="anim-float parallax hero-mascot"
+         data-depth="-0.04"
+         style="position:absolute; right:6%; top:30px; width:200px; z-index:3; display:block;
+                filter: drop-shadow(0 12px 20px rgba(122,90,46,0.18));" />
+  </div>
+</section>
+
+<!-- ============================== TRUSTED BY ============================== -->
+<section class="tight">
+  <div class="wrap">
+    <p class="subtle center fade-up" style="margin-bottom: 18px;">Built on the best models in the world</p>
+    <div class="row" style="justify-content:center; flex-wrap: wrap; gap: 22px;">
+      <span class="chip fade-up">Veo 3.1</span>
+      <span class="chip fade-up delay-1">Sora 2</span>
+      <span class="chip fade-up delay-1">Runway Gen-4</span>
+      <span class="chip fade-up delay-2">Kling 3</span>
+      <span class="chip fade-up delay-2">Pika</span>
+      <span class="chip fade-up delay-3">Luma</span>
+      <span class="chip fade-up delay-3">ElevenLabs v3</span>
+      <span class="chip fade-up delay-4">Suno v5.5</span>
+      <span class="chip fade-up delay-4">Udio</span>
+      <span class="chip fade-up delay-4">Flux</span>
+      <span class="chip fade-up delay-4">Imagen 3</span>
+      <span class="chip fade-up delay-4">Midjourney v7</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FEATURED TOOLS ============================== -->
+<section id="tools">
+  <div class="wrap">
+    <p class="eyebrow fade-up"><span class="dot"></span> Every tool</p>
+    <h2 class="fade-up">One studio. Twenty-five superpowers.</h2>
+    <p class="lede fade-up delay-1" style="margin-bottom: 40px;">
+      Generate, edit, score, dub, transcribe, translate, animate — without
+      bouncing between six different tabs and six different bills.
+    </p>
+
+    <div class="grid-4">
+      <a class="card hover tilt-card fade-up" href="/articles/ai-video-maker.html">
+        <div class="icon-badge sky"><svg width="22" height="22"><use href="/assets/svg/icons.svg#sparkles"/></svg></div>
+        <h3>AI Video</h3>
+        <p class="subtle">Text or image to cinematic scene with native audio.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-1" href="/articles/faceless-video-maker.html">
+        <div class="icon-badge peach"><svg width="22" height="22"><use href="/assets/svg/icons.svg#film"/></svg></div>
+        <h3>Faceless Video</h3>
+        <p class="subtle">Script → narrated short with B-roll, captions and music.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-2" href="/articles/ai-avatar.html">
+        <div class="icon-badge rose"><svg width="22" height="22"><use href="/assets/svg/icons.svg#person"/></svg></div>
+        <h3>AI Avatar</h3>
+        <p class="subtle">Photo + script → studio-grade talking-head.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-3" href="/articles/storyboard.html">
+        <div class="icon-badge sky"><svg width="22" height="22"><use href="/assets/svg/icons.svg#grid"/></svg></div>
+        <h3>Storyboard</h3>
+        <p class="subtle">Multi-shot scenes with consistent characters.</p>
+      </a>
+
+      <a class="card hover tilt-card fade-up" href="/articles/auto-captions.html">
+        <div class="icon-badge meadow"><svg width="22" height="22"><use href="/assets/svg/icons.svg#text"/></svg></div>
+        <h3>Auto Captions</h3>
+        <p class="subtle">Karaoke, kinetic, minimal — in 30+ languages.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-1" href="/articles/ai-dubbing.html">
+        <div class="icon-badge lavender"><svg width="22" height="22"><use href="/assets/svg/icons.svg#globe"/></svg></div>
+        <h3>AI Dub</h3>
+        <p class="subtle">Translate while preserving voice and emotion.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-2" href="/articles/ai-voiceover.html">
+        <div class="icon-badge rose"><svg width="22" height="22"><use href="/assets/svg/icons.svg#mic"/></svg></div>
+        <h3>Voiceover</h3>
+        <p class="subtle">Precision multi-segment narration with music ducking.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-3" href="/articles/video-to-music.html">
+        <div class="icon-badge amber"><svg width="22" height="22"><use href="/assets/svg/icons.svg#music"/></svg></div>
+        <h3>Video → Music</h3>
+        <p class="subtle">Auto-score by mood, genre and intensity.</p>
+      </a>
+
+      <a class="card hover tilt-card fade-up" href="/articles/ai-voice-generator.html">
+        <div class="icon-badge terra"><svg width="22" height="22"><use href="/assets/svg/icons.svg#mic"/></svg></div>
+        <h3>Text to Speech</h3>
+        <p class="subtle">12+ studio-grade voices with full control.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-1" href="/articles/podcast-generator.html">
+        <div class="icon-badge lavender"><svg width="22" height="22"><use href="/assets/svg/icons.svg#people"/></svg></div>
+        <h3>Podcasts</h3>
+        <p class="subtle">Multi-speaker scripts with a voice per character.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-2" href="/articles/ai-music-generator.html">
+        <div class="icon-badge amber"><svg width="22" height="22"><use href="/assets/svg/icons.svg#disc"/></svg></div>
+        <h3>AI Music</h3>
+        <p class="subtle">Full songs with vocals from a single prompt.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-3" href="/articles/sound-effects-generator.html">
+        <div class="icon-badge terra"><svg width="22" height="22"><use href="/assets/svg/icons.svg#wave"/></svg></div>
+        <h3>Sound Effects</h3>
+        <p class="subtle">Cinematic SFX from a text description.</p>
+      </a>
+
+      <a class="card hover tilt-card fade-up" href="/articles/voice-changer.html">
+        <div class="icon-badge rose"><svg width="22" height="22"><use href="/assets/svg/icons.svg#swap"/></svg></div>
+        <h3>Voice Changer</h3>
+        <p class="subtle">Speech-to-speech voice replacement.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-1" href="/articles/voice-isolator.html">
+        <div class="icon-badge terra"><svg width="22" height="22"><use href="/assets/svg/icons.svg#filter"/></svg></div>
+        <h3>Voice Isolator</h3>
+        <p class="subtle">Separate vocals from background noise.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-2" href="/articles/speech-to-text.html">
+        <div class="icon-badge meadow"><svg width="22" height="22"><use href="/assets/svg/icons.svg#document"/></svg></div>
+        <h3>Transcribe</h3>
+        <p class="subtle">90+ languages with word-level timestamps.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-3" href="/articles/translate-video.html">
+        <div class="icon-badge lavender"><svg width="22" height="22"><use href="/assets/svg/icons.svg#globe"/></svg></div>
+        <h3>Translate Video</h3>
+        <p class="subtle">Lip-sync any video into a new language.</p>
+      </a>
+
+      <a class="card hover tilt-card fade-up" href="/articles/lip-sync.html">
+        <div class="icon-badge peach"><svg width="22" height="22"><use href="/assets/svg/icons.svg#mic"/></svg></div>
+        <h3>Lip Sync</h3>
+        <p class="subtle">Drive any face video with new audio.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-1" href="/articles/extend-video.html">
+        <div class="icon-badge sky"><svg width="22" height="22"><use href="/assets/svg/icons.svg#forward"/></svg></div>
+        <h3>Extend Video</h3>
+        <p class="subtle">Continue any clip naturally for seconds.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-2" href="/articles/background-remover.html">
+        <div class="icon-badge meadow"><svg width="22" height="22"><use href="/assets/svg/icons.svg#cut"/></svg></div>
+        <h3>Background Remover</h3>
+        <p class="subtle">Cut your subject out — no green screen.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-3" href="/articles/inpaint-video.html">
+        <div class="icon-badge sky"><svg width="22" height="22"><use href="/assets/svg/icons.svg#brush"/></svg></div>
+        <h3>Inpaint</h3>
+        <p class="subtle">Remove, replace or restyle any region.</p>
+      </a>
+
+      <a class="card hover tilt-card fade-up" href="/articles/video-effects.html">
+        <div class="icon-badge peach"><svg width="22" height="22"><use href="/assets/svg/icons.svg#flash"/></svg></div>
+        <h3>Effects</h3>
+        <p class="subtle">One-tap viral effects — melt, crush, glow.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-1" href="/articles/ai-image-generator.html">
+        <div class="icon-badge sky"><svg width="22" height="22"><use href="/assets/svg/icons.svg#image"/></svg></div>
+        <h3>AI Image</h3>
+        <p class="subtle">Flux · Imagen · SD · Midjourney v7.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-2" href="/articles/voice-design.html">
+        <div class="icon-badge terra"><svg width="22" height="22"><use href="/assets/svg/icons.svg#wand"/></svg></div>
+        <h3>Voice Design</h3>
+        <p class="subtle">Invent new voices from a description.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-3" href="/articles/voice-library.html">
+        <div class="icon-badge lavender"><svg width="22" height="22"><use href="/assets/svg/icons.svg#library"/></svg></div>
+        <h3>Voice Library</h3>
+        <p class="subtle">1000s of community voices.</p>
+      </a>
+
+      <a class="card hover tilt-card fade-up" href="/articles/voice-agent.html">
+        <div class="icon-badge lavender"><svg width="22" height="22"><use href="/assets/svg/icons.svg#chat"/></svg></div>
+        <h3>Voice Agents</h3>
+        <p class="subtle">Conversational AI you can call or embed.</p>
+      </a>
+      <a class="card hover tilt-card fade-up delay-1" href="/articles/audio-native.html">
+        <div class="icon-badge terra"><svg width="22" height="22"><use href="/assets/svg/icons.svg#play"/></svg></div>
+        <h3>Audio Native</h3>
+        <p class="subtle">Embed an article-narrating player anywhere.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== HOW IT WORKS ============================== -->
+<section style="background: var(--paper);">
+  <div class="wrap">
+    <p class="eyebrow fade-up"><span class="dot"></span> Calm by design</p>
+    <h2 class="fade-up">Three taps. One finished video.</h2>
+    <div class="grid-3" style="margin-top: 32px;">
+      <div class="card fade-up">
+        <div class="icon-badge sky" style="font-family: var(--serif); font-size: 18px;">1</div>
+        <h3>Describe</h3>
+        <p class="subtle">Tell Lumen what you want in plain words. Or hand it a reference image, a video, an article — anything you've already started.</p>
+      </div>
+      <div class="card fade-up delay-1">
+        <div class="icon-badge peach" style="font-family: var(--serif); font-size: 18px;">2</div>
+        <h3>Style</h3>
+        <p class="subtle">Pick the voice, language, aspect, motion and mood. Soft, sensible defaults so you only touch what matters.</p>
+      </div>
+      <div class="card fade-up delay-2">
+        <div class="icon-badge terra" style="font-family: var(--serif); font-size: 18px;">3</div>
+        <h3>Share</h3>
+        <p class="subtle">Lumen exports a finished file ready for TikTok, Reels, Shorts, YouTube — or anywhere your story belongs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== LEARN / ARTICLES PREVIEW ============================== -->
+<section>
+  <div class="wrap">
+    <div class="row" style="justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <p class="eyebrow fade-up"><span class="dot"></span> Learn</p>
+        <h2 class="fade-up">Tutorials for every tool.</h2>
+        <p class="subtle fade-up delay-1" style="max-width: 56ch;">
+          Short, calm, no-fluff guides. Each one shows the exact taps,
+          settings, and prompts that actually work.
+        </p>
+      </div>
+      <a class="btn btn-secondary fade-up delay-2" href="/articles/">
+        Browse the library
+        <svg width="16" height="16"><use href="/assets/svg/icons.svg#arrow-right"/></svg>
+      </a>
+    </div>
+
+    <div class="grid-3" style="margin-top: 32px;">
+      <a class="card hover fade-up" href="/articles/faceless-video-maker.html">
+        <div class="icon-badge peach"><svg width="22" height="22"><use href="/assets/svg/icons.svg#film"/></svg></div>
+        <h3>Ship your first faceless video</h3>
+        <p class="subtle">A 5-minute walkthrough from blank screen to a 9:16 short, fully narrated and captioned.</p>
+      </a>
+      <a class="card hover fade-up delay-1" href="/articles/ai-dubbing.html">
+        <div class="icon-badge lavender"><svg width="22" height="22"><use href="/assets/svg/icons.svg#globe"/></svg></div>
+        <h3>Dub a video into 12 languages</h3>
+        <p class="subtle">Keep your voice. Keep your gestures. Reach a global audience.</p>
+      </a>
+      <a class="card hover fade-up delay-2" href="/articles/ai-music-generator.html">
+        <div class="icon-badge amber"><svg width="22" height="22"><use href="/assets/svg/icons.svg#disc"/></svg></div>
+        <h3>Write a full song from a prompt</h3>
+        <p class="subtle">Pick a model, write style tags, hit generate. Real vocals. Real structure.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRICING ============================== -->
+<section id="pricing" style="background: var(--paper);">
+  <div class="wrap">
+    <p class="eyebrow fade-up"><span class="dot"></span> Pricing</p>
+    <h2 class="fade-up">Fair, honest, and free to start.</h2>
+    <p class="subtle fade-up delay-1" style="max-width: 56ch; margin-bottom: 32px;">
+      No surprise charges. Cancel anytime. Every tool included on every plan —
+      the price only changes what you can generate per month.
+    </p>
+
+    <div class="grid-3">
+      <div class="card fade-up">
+        <p class="eyebrow"><span class="dot"></span> Free</p>
+        <h3 style="font-family: var(--serif); font-size: 32px; margin-top: 12px;">$0</h3>
+        <p class="subtle">forever</p>
+        <div class="divider"></div>
+        <ul style="padding: 0; list-style: none; color: var(--ink-soft); font-size: 15px;">
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> 45 starter credits / month</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> Every tool included</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> 720p exports, watermarked</li>
+        </ul>
+        <a class="btn btn-secondary" href="/signup.html" style="margin-top: 18px;">Start free</a>
+      </div>
+      <div class="card fade-up delay-1" style="border-color: var(--terracotta); box-shadow: var(--shadow-card); position: relative;">
+        <span class="chip" style="position: absolute; top: -10px; right: 16px; background: var(--terracotta); color: #fff; border-color: var(--terracotta);">Most loved</span>
+        <p class="eyebrow"><span class="dot"></span> Pro</p>
+        <h3 style="font-family: var(--serif); font-size: 32px; margin-top: 12px;">$12 <span class="subtle" style="font-size: 14px;">/ month</span></h3>
+        <p class="subtle">billed monthly</p>
+        <div class="divider"></div>
+        <ul style="padding: 0; list-style: none; color: var(--ink-soft); font-size: 15px;">
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> 1,200 credits / month</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> 1080p exports, no watermark</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> Commercial license</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> Priority queue</li>
+        </ul>
+        <a class="btn btn-primary" href="/signup.html" style="margin-top: 18px;">Try Pro free for 7 days</a>
+      </div>
+      <div class="card fade-up delay-2">
+        <p class="eyebrow"><span class="dot"></span> Studio</p>
+        <h3 style="font-family: var(--serif); font-size: 32px; margin-top: 12px;">$36 <span class="subtle" style="font-size: 14px;">/ month</span></h3>
+        <p class="subtle">teams and creators</p>
+        <div class="divider"></div>
+        <ul style="padding: 0; list-style: none; color: var(--ink-soft); font-size: 15px;">
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> 5,000 credits / month</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> 4K exports, all formats</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> Voice cloning + agents</li>
+          <li class="row"><svg width="16" height="16" style="color: var(--meadow-deep);"><use href="/assets/svg/icons.svg#check"/></svg> Team seats included</li>
+        </ul>
+        <a class="btn btn-secondary" href="/signup.html" style="margin-top: 18px;">Get Studio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA STRIP ============================== -->
+<section style="padding: 64px 0;">
+  <div class="wrap">
+    <div class="card tilt-card fade-up" style="
+        background: linear-gradient(135deg, var(--peach-tint), var(--peach));
+        border: none; padding: 48px; text-align: center;
+        position: relative; overflow: hidden;">
+      <img src="/assets/svg/cloud.svg" alt="" class="anim-drift"
+           style="position:absolute; top:-30px; left:-30px; width:240px; opacity:0.6;"/>
+      <img src="/assets/svg/cloud.svg" alt="" class="anim-drift-rev"
+           style="position:absolute; bottom:-40px; right:-30px; width:280px; opacity:0.5;"/>
+      <h2 style="color: var(--terracotta-deep); position: relative;">Make something today.</h2>
+      <p style="color: var(--terracotta-deep); opacity: 0.85; max-width: 50ch; margin: 0 auto 24px; position: relative;">
+        Free forever for the first 45 credits. No card. The first video takes
+        about 90 seconds — including reading this sentence.
+      </p>
+      <a class="btn btn-primary btn-lg" href="/signup.html" style="position: relative;">
+        Open Lumen Studio
+        <svg width="18" height="18"><use href="/assets/svg/icons.svg#arrow-right"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/" style="margin-bottom: 14px;">
+          <span class="brand-mark">L</span>
+          <span>Lumen Studio</span>
+        </a>
+        <p class="subtle" style="max-width: 36ch; margin-top: 12px;">A whole video studio, gently in your pocket. Made with care for creators everywhere.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="/#tools">Tools</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/articles/">Tutorials</a>
+        <a href="https://apps.apple.com/app/id0000000000">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.lumenstudio.app">Google Play</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Changelog</a>
+        <a href="#">Careers</a>
+        <a href="/legal/support.html">Support</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="/legal/privacy.html">Privacy</a>
+        <a href="/legal/terms.html">Terms</a>
+        <a href="/legal/cookies.html">Cookies</a>
+      </div>
+    </div>
+    <div class="copy">
+      <p>© <span data-year>2026</span> Lumen Studio. All rights reserved.</p>
+      <p><a href="/login.html">Sign in</a> &nbsp;·&nbsp; <a href="/signup.html">Get started</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/anim.js" defer></script>
+</body>
+</html>

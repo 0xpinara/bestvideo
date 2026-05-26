@@ -1,0 +1,47 @@
+AI Video Maker · Lumen Studio turns a single sentence into a finished, cinematic video — with voice, captions, music, and dubbing in 30+ languages. Built for creators who want the power of a studio in their pocket, without the learning curve.
+
+Whether you make Reels, Shorts, TikToks, YouTube videos, ads, explainers, lessons, or bedtime stories — every tool you need to ship is one tap away.
+
+— WHAT YOU CAN MAKE —
+
+• AI Video Generator — Describe any scene and watch it come alive. Choose your model, aspect ratio, duration, resolution, and audio. Use a reference photo as a start or end frame for total control.
+
+• Faceless Video Maker — Type an idea, pick a voice and a B-roll style (cinematic, animated, documentary, or hand-drawn). Lumen writes, narrates, edits, and burns in kinetic captions for you.
+
+• Auto Captions — Upload any clip and get accurate, beautifully styled captions in seconds. Karaoke, kinetic, bold, minimal, or subtle styles. 30+ languages, custom highlight colors, emoji suggestions.
+
+• AI Dubbing — Translate any video into 30+ languages while preserving the original speaker's voice and emotion. Lip-sync, multi-speaker, and background-music preservation included.
+
+• AI Voiceover — Drop precision-timed narration onto any video, segment by segment. Choose a different voice per segment. Auto-ducks the background music.
+
+• Video to Music — Auto-score your video by mood, genre, intensity, and instrumentation. Lumen reads your cuts and writes a melody that breathes with the scene.
+
+• AI Voice Generator (TTS) — Studio-grade text-to-speech with 12+ voices, stability, similarity, style, and speaker-boost controls. From whispered narration to confident ads.
+
+• Long-Form Audio & Podcasts — Multi-speaker scripts with a different voice per character. Perfect for podcasts, audiobooks, dialogues, and YouTube essays.
+
+— WHY LUMEN —
+
+✓ Every tool, in one app — stop juggling six different subscriptions
+✓ Beautiful by default — every output looks hand-finished
+✓ Works offline-first — your drafts and history live on your device
+✓ Privacy you can feel — your API keys never leave the secure enclave
+✓ Cute, calm interface — no flashing banners, no upsells, no clutter
+✓ Built for iPhone and iPad — looks great on every screen, from SE to Pro Max
+
+— PERFECT FOR —
+
+• Content creators making Reels, TikTok, and YouTube Shorts
+• Marketers and small businesses making ads on the go
+• Educators and course creators producing lessons
+• Filmmakers prototyping scenes and storyboards
+• Podcasters and audiobook narrators
+• Anyone who has a story to tell
+
+— SUBSCRIPTIONS —
+
+Lumen is free to download with a generous starter quota of credits. Upgrade to Lumen Pro for unlimited generations, 1080p exports, commercial-use license, and priority queue. Subscriptions auto-renew unless cancelled at least 24 hours before the end of the period. Manage in Settings → Apple ID → Subscriptions.
+
+Privacy: https://lumenstudio.app/privacy
+Terms: https://lumenstudio.app/terms
+Support: hello@lumenstudio.app

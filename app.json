@@ -1,0 +1,121 @@
+{
+  "expo": {
+    "name": "Lumen Studio",
+    "slug": "lumen-studio",
+    "scheme": "lumen",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF4EC"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lumenstudio.app",
+      "associatedDomains": [
+        "applinks:lumenstudio.app",
+        "applinks:www.lumenstudio.app",
+        "activitycontinuation:lumenstudio.app",
+        "webcredentials:lumenstudio.app"
+      ],
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Lumen uses your photos so you can upload videos and frames to generate from.",
+        "NSPhotoLibraryAddUsageDescription": "Save generated videos and audio to your library.",
+        "NSMicrophoneUsageDescription": "Record reference audio for voice cloning.",
+        "CFBundleSpokenName": "Lumen Studio",
+        "CFBundleDisplayName": "Lumen",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.lumenstudio.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FAF4EC",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "lumenstudio.app",
+              "pathPrefix": "/"
+            },
+            {
+              "scheme": "https",
+              "host": "www.lumenstudio.app",
+              "pathPrefix": "/"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        },
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "lumen"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Lumen uses your photos so you can upload videos and frames."
+        }
+      ],
+      "expo-secure-store",
+      "expo-image",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Record reference audio for voice cloning."
+        }
+      ],
+      "expo-asset"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "name": "Lumen Studio · AI Video, Voice, Music & Avatars",
+      "shortName": "Lumen",
+      "description": "AI video maker, voice generator, music, dubbing, captions, AI avatars and more — all in one beautiful app.",
+      "themeColor": "#FAF4EC",
+      "backgroundColor": "#FAF4EC",
+      "lang": "en",
+      "display": "standalone",
+      "orientation": "portrait",
+      "preferRelatedApplications": true
+    },
+    "extra": {
+      "marketingUrl": "https://lumenstudio.app",
+      "supportUrl": "https://lumenstudio.app/support",
+      "privacyUrl": "https://lumenstudio.app/privacy"
+    }
+  }
+}
