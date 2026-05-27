@@ -1,7 +1,7 @@
 # Lumen Studio — marketing site
 
 > A pure-static, animated, beautifully indexed site that lives at the
-> root of `lumenstudio.app`. Zero frameworks, zero build step beyond
+> root of `makefacelessvideos.com`. Zero frameworks, zero build step beyond
 > a tiny article generator.
 
 Everything ships from `/site/` with three layers:

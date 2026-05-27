@@ -1,21 +1,21 @@
 import * as Linking from 'expo-linking';
 import type { LinkingOptions } from '@react-navigation/native';
+import { APP_URL, MARKETING_URL } from '../config/urls';
 import type { RootStackParamList } from './types';
 
 /**
  * Universal Links + App Links deep-link configuration.
  *
- * URLs like https://lumenstudio.app/ai-video-maker open the in-app creator
- * the same way the marketing page advertises. This is what Apple and
- * Google reward in app search — verified deep links boost both store and
- * web rankings for the destination keywords.
+ * Tool URLs live on the app subdomain (e.g. app.makefacelessvideos.com/ai-video-maker).
+ * Marketing pages and articles stay on the main domain for SEO.
  */
 export const linking: LinkingOptions<RootStackParamList> = {
   prefixes: [
     Linking.createURL('/'),
-    'https://lumenstudio.app',
-    'https://www.lumenstudio.app',
-    'lumen://',
+    APP_URL.replace(/\/$/, ''),
+    MARKETING_URL.replace(/\/$/, ''),
+    'https://www.makefacelessvideos.com',
+    'mfv://',
   ],
   config: {
     screens: {

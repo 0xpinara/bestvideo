@@ -24,7 +24,7 @@ On top of that, the web build adds:
 - **Progressive Web App** — installs to the home screen on iOS and
   Android via the included `manifest.webmanifest`, with the same
   cream/terracotta theme colours.
-- **Universal Link parity** — `lumenstudio.app/ai-video-maker` opens
+- **Universal Link parity** — `makefacelessvideos.com/ai-video-maker` opens
   the exact same screen on web, iOS, and Android.
 
 ---

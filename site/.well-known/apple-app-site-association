@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["TEAMID0000.com.lumenstudio.app"],
+        "appIDs": ["TEAMID0000.com.makefacelessvideos.app"],
         "components": [
           { "/": "/", "comment": "Home" },
           { "/": "/project/*", "comment": "Open a specific project" },
@@ -19,9 +19,9 @@
     ]
   },
   "webcredentials": {
-    "apps": ["TEAMID0000.com.lumenstudio.app"]
+    "apps": ["TEAMID0000.com.makefacelessvideos.app"]
   },
   "activitycontinuation": {
-    "apps": ["TEAMID0000.com.lumenstudio.app"]
+    "apps": ["TEAMID0000.com.makefacelessvideos.app"]
   }
 }

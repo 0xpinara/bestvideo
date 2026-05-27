@@ -17,8 +17,12 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const ARTICLES = require('./articles.json');
+const { marketing, app, brand } = require('./domains');
 const OUT = path.join(ROOT, 'site', 'articles');
 fs.mkdirSync(OUT, { recursive: true });
+
+const M = marketing.replace(/\/$/, '');
+const A = app.replace(/\/$/, '');
 
 const ACCENT_CLASSES = {
   sky: 'sky', meadow: 'meadow', peach: 'peach', lavender: 'lavender',
@@ -26,7 +30,7 @@ const ACCENT_CLASSES = {
 };
 
 function tpl(article, prevNext) {
-  const url = `https://lumenstudio.app/articles/${article.slug}.html`;
+  const url = `${M}/articles/${article.slug}.html`;
   const safeBody = article.body.replace(/\n\n/g, '\n');
   const accent = ACCENT_CLASSES[article.accent] || 'terra';
 
@@ -34,8 +38,8 @@ function tpl(article, prevNext) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Lumen Studio', item: 'https://lumenstudio.app/' },
-      { '@type': 'ListItem', position: 2, name: 'Tutorials', item: 'https://lumenstudio.app/articles/' },
+      { '@type': 'ListItem', position: 1, name: brand, item: `${M}/` },
+      { '@type': 'ListItem', position: 2, name: 'Tutorials', item: `${M}/articles/` },
       { '@type': 'ListItem', position: 3, name: article.title, item: url },
     ],
   });
@@ -45,9 +49,9 @@ function tpl(article, prevNext) {
     '@type': 'TechArticle',
     headline: article.title,
     description: article.description,
-    author: { '@type': 'Organization', name: 'Lumen Studio' },
-    publisher: { '@type': 'Organization', name: 'Lumen Studio', logo: 'https://lumenstudio.app/assets/icon-512.png' },
-    image: 'https://lumenstudio.app/assets/og-cover.png',
+    author: { '@type': 'Organization', name: brand },
+    publisher: { '@type': 'Organization', name: brand, logo: `${M}/assets/icon-512.png` },
+    image: `${M}/assets/og-cover.png`,
     datePublished: article.published || '2026-05-25',
     dateModified: article.updated || article.published || '2026-05-25',
     mainEntityOfPage: url,
@@ -59,7 +63,7 @@ function tpl(article, prevNext) {
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <meta name="theme-color" content="#FAF4EC" />
-<title>${escapeHtml(article.title)} · Lumen Studio</title>
+<title>${escapeHtml(article.title)} · ${escapeHtml(brand)}</title>
 <meta name="description" content="${escapeHtml(article.description)}" />
 <meta name="keywords" content="${escapeHtml(article.keywords.join(', '))}" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -71,7 +75,7 @@ function tpl(article, prevNext) {
 <meta property="og:title" content="${escapeHtml(article.title)}" />
 <meta property="og:description" content="${escapeHtml(article.description)}" />
 <meta property="og:url" content="${url}" />
-<meta property="og:image" content="https://lumenstudio.app/assets/og-cover.png" />
+<meta property="og:image" content="${M}/assets/og-cover.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="${escapeHtml(article.title)}" />
 <meta name="twitter:description" content="${escapeHtml(article.description)}" />
@@ -85,7 +89,7 @@ function tpl(article, prevNext) {
   <div class="inner">
     <a class="brand" href="/">
       <span class="brand-mark">L</span>
-      <span>Lumen Studio</span>
+      <span>${escapeHtml(brand)}</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="/#tools">Tools</a>
@@ -144,9 +148,9 @@ ${article.body}
     <div class="card fade-up" style="background: linear-gradient(135deg, var(--peach-tint), var(--peach)); border: none; text-align: center; padding: 36px;">
       <h2 style="color: var(--terracotta-deep); margin-bottom: 6px;">Try it now.</h2>
       <p style="color: var(--terracotta-deep); opacity: 0.85; max-width: 50ch; margin: 0 auto 22px;">
-        The fastest way to learn is to make. Open Lumen Studio and try the steps above on your own footage.
+        The fastest way to learn is to make. Open ${escapeHtml(brand)} and try the steps above on your own footage.
       </p>
-      <a class="btn btn-primary btn-lg" href="/signup.html">Start free in 20 seconds</a>
+      <a class="btn btn-primary btn-lg" href="${A}/" data-app-href="/">Start free in 20 seconds</a>
     </div>
   </div>
 </section>
@@ -157,7 +161,7 @@ ${article.body}
       <div>
         <a class="brand" href="/" style="margin-bottom: 14px;">
           <span class="brand-mark">L</span>
-          <span>Lumen Studio</span>
+          <span>${escapeHtml(brand)}</span>
         </a>
         <p class="subtle" style="max-width: 36ch; margin-top: 12px;">A whole video studio, gently in your pocket.</p>
       </div>
@@ -166,12 +170,14 @@ ${article.body}
       <div><h4>Legal</h4><a href="/legal/privacy.html">Privacy</a><a href="/legal/terms.html">Terms</a></div>
     </div>
     <div class="copy">
-      <p>© <span data-year>2026</span> Lumen Studio.</p>
+      <p>© <span data-year>2026</span> ${escapeHtml(brand)}.</p>
       <p><a href="/login.html">Sign in</a> · <a href="/signup.html">Get started</a></p>
     </div>
   </div>
 </footer>
 
+<script src="/js/urls.js"></script>
+<script src="/js/bridge.js" defer></script>
 <script src="/js/anim.js" defer></script>
 </body>
 </html>

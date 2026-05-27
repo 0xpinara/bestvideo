@@ -35,7 +35,7 @@ everywhere — but follow the same naming structure (keyword + brand).
 
 ### Week 1 — Foundation
 
-- [ ] Buy `lumenstudio.app`, deploy `/site` to it (Vercel / Cloudflare Pages — both free).
+- [ ] Buy `makefacelessvideos.com`, deploy `/site` to it (Vercel / Cloudflare Pages — both free).
 - [ ] Submit `sitemap.xml` to Google Search Console and Bing Webmaster.
 - [ ] Create Apple Developer + Google Play Console accounts.
 - [ ] Generate **8 portrait screenshots** (1290×2796 iPhone, 1080×1920 Android) using the templates in `store/screenshots/`.
@@ -107,7 +107,7 @@ Add this in `src/services/api.ts` when wiring real generation.
 
 ### B. SEO-optimised user pages
 When a user makes a project public, we generate a public page at
-`lumenstudio.app/u/<handle>/<slug>` with full Open Graph + JSON-LD. These
+`makefacelessvideos.com/u/<handle>/<slug>` with full Open Graph + JSON-LD. These
 indexes accumulate over time — by month 12, this is typically the largest
 organic channel for tools like ours.
 
@@ -134,7 +134,7 @@ LLM cites the highest-authority page with the cleanest claims. That's us.
 
 ```
                     ┌──────────────────────────┐
-        Search →    │  lumenstudio.app/<page>  │
+        Search →    │  makefacelessvideos.com/<page>  │
                     │  - keyword in URL        │
                     │  - JSON-LD               │
                     │  - Apple smart banner    │
@@ -191,6 +191,6 @@ Replace these placeholders in the files above:
 - `TEAMID0000` → your Apple Developer Team ID
 - `PLACEHOLDER:AA:BB:...` → SHA-256 fingerprint of your Play signing key
 - `YOUR_PROMO_VIDEO_ID` → YouTube ID of your store listing promo
-- `lumenstudio.app` everywhere → the domain you actually buy
+- `makefacelessvideos.com` everywhere → the domain you actually buy
 
 That's it. Ship, listen, iterate.

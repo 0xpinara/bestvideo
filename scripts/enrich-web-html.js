@@ -30,51 +30,51 @@ const enriched = `<!DOCTYPE html>
 <meta name="theme-color" content="#FAF4EC" />
 <meta name="color-scheme" content="light dark" />
 
-<title>Lumen Studio · AI Video Maker, Voice, Dubbing, Music & Avatars</title>
-<meta name="description" content="Lumen Studio is the all-in-one AI creator app: AI video, voice generation, sound effects, AI music, dubbing in 30+ languages, AI avatars, lip-sync, captions, and more. Free to start. iOS, Android, and Web." />
+<title>Make Faceless Videos · AI Video Maker, Voice, Dubbing, Music & Avatars</title>
+<meta name="description" content="Make Faceless Videos is the all-in-one AI creator app: AI video, voice generation, sound effects, AI music, dubbing in 30+ languages, AI avatars, lip-sync, captions, and more. Free to start. iOS, Android, and Web." />
 <meta name="keywords" content="ai video maker, ai voice generator, ai music generator, sound effects, text to speech, ai dubbing, ai avatar, lip sync, video translator, auto captions, voice changer, voice isolator, transcribe, podcast generator, ai image generator" />
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 <meta name="googlebot" content="index,follow" />
-<link rel="canonical" href="https://lumenstudio.app/" />
+<link rel="canonical" href="https://makefacelessvideos.com/" />
 <link rel="manifest" href="/manifest.webmanifest" />
 
-<meta name="apple-itunes-app" content="app-id=0000000000, app-argument=https://lumenstudio.app/" />
+<meta name="apple-itunes-app" content="app-id=0000000000, app-argument=https://makefacelessvideos.com/" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="Lumen" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="icon" href="/favicon.ico" />
 
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="Lumen Studio" />
-<meta property="og:title" content="Lumen Studio · AI Video, Voice, Music & Avatars in one app" />
+<meta property="og:site_name" content="Make Faceless Videos" />
+<meta property="og:title" content="Make Faceless Videos · AI Video, Voice, Music & Avatars in one app" />
 <meta property="og:description" content="Type a sentence, get a finished video. AI video, voice, music, dubbing, captions, avatars and more. Free to start." />
-<meta property="og:url" content="https://lumenstudio.app/" />
-<meta property="og:image" content="https://lumenstudio.app/assets/og-cover.png" />
+<meta property="og:url" content="https://makefacelessvideos.com/" />
+<meta property="og:image" content="https://makefacelessvideos.com/assets/og-cover.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_US" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@lumenstudio" />
-<meta name="twitter:title" content="Lumen Studio · AI Video, Voice, Music & Avatars" />
+<meta name="twitter:title" content="Make Faceless Videos · AI Video, Voice, Music & Avatars" />
 <meta name="twitter:description" content="Type a sentence, get a finished video. AI video, voice, music, dubbing, captions, avatars." />
-<meta name="twitter:image" content="https://lumenstudio.app/assets/og-cover.png" />
+<meta name="twitter:image" content="https://makefacelessvideos.com/assets/og-cover.png" />
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Lumen Studio",
+  "name": "Make Faceless Videos",
   "alternateName": ["Lumen", "AI Video Maker", "Lumen AI Studio"],
   "applicationCategory": "MultimediaApplication",
   "operatingSystem": "Web · iOS 15+ · Android 9+",
   "description": "AI video maker, voice generator, music, dubbing, captions, AI avatars and more in one mobile and web app.",
-  "url": "https://lumenstudio.app/",
+  "url": "https://makefacelessvideos.com/",
   "downloadUrl": [
     "https://apps.apple.com/app/id0000000000",
-    "https://play.google.com/store/apps/details?id=com.lumenstudio.app"
+    "https://play.google.com/store/apps/details?id=com.makefacelessvideos.com"
   ],
-  "screenshot": "https://lumenstudio.app/assets/shot-1.png",
+  "screenshot": "https://makefacelessvideos.com/assets/shot-1.png",
   "softwareVersion": "1.0.0",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "1280" },
@@ -114,9 +114,9 @@ const enriched = `<!DOCTYPE html>
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"What is Lumen Studio?","acceptedAnswer":{"@type":"Answer","text":"Lumen Studio is an all-in-one AI creator app that turns text into finished videos. It includes AI video, voice generation, music, sound effects, dubbing in 30+ languages, AI avatars, lip sync, captions, voiceover, image generation, voice cloning, and multi-speaker podcasts — all in one product."}},
-    {"@type":"Question","name":"Does Lumen Studio work on the web?","acceptedAnswer":{"@type":"Answer","text":"Yes. Lumen Studio runs as a native iOS app, a native Android app, and a Progressive Web App in the browser — all from the same codebase, so every feature lands on every platform at the same time."}},
-    {"@type":"Question","name":"Is Lumen Studio free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Lumen is free to use with a generous starter quota of credits. Lumen Pro unlocks unlimited generations, 1080p exports, commercial use, and priority queue."}},
+    {"@type":"Question","name":"What is Make Faceless Videos?","acceptedAnswer":{"@type":"Answer","text":"Make Faceless Videos is an all-in-one AI creator app that turns text into finished videos. It includes AI video, voice generation, music, sound effects, dubbing in 30+ languages, AI avatars, lip sync, captions, voiceover, image generation, voice cloning, and multi-speaker podcasts — all in one product."}},
+    {"@type":"Question","name":"Does Make Faceless Videos work on the web?","acceptedAnswer":{"@type":"Answer","text":"Yes. Make Faceless Videos runs as a native iOS app, a native Android app, and a Progressive Web App in the browser — all from the same codebase, so every feature lands on every platform at the same time."}},
+    {"@type":"Question","name":"Is Make Faceless Videos free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Lumen is free to use with a generous starter quota of credits. Lumen Pro unlocks unlimited generations, 1080p exports, commercial use, and priority queue."}},
     {"@type":"Question","name":"Which AI models power Lumen?","acceptedAnswer":{"@type":"Answer","text":"Lumen wraps best-in-class providers: Veo 3.1, Sora 2, Runway Gen-4, Kling 3, Pika and Luma Dream Machine for video; Eleven Music v1, Suno v5.5 and Udio v1.5 for music; Flux, Imagen 3, Stable Diffusion 3.5 and Midjourney v7 for images; ElevenLabs for voice."}}
   ]
 }
@@ -162,13 +162,13 @@ const enriched = `<!DOCTYPE html>
 <body>
   <noscript>
     <div class="ls-skeleton">
-      <p class="ls-eyebrow">Lumen Studio</p>
+      <p class="ls-eyebrow">Make Faceless Videos</p>
       <h1 class="ls-title">Turn a sentence into a finished video.</h1>
       <p>The all-in-one AI creator app: AI video, voice, music, dubbing, AI avatars, captions and more.</p>
       <p>
         <a class="ls-cta" href="https://apps.apple.com/app/id0000000000">App Store</a>
         &nbsp;
-        <a class="ls-cta" href="https://play.google.com/store/apps/details?id=com.lumenstudio.app">Google Play</a>
+        <a class="ls-cta" href="https://play.google.com/store/apps/details?id=com.makefacelessvideos.com">Google Play</a>
       </p>
     </div>
   </noscript>
@@ -204,7 +204,7 @@ const robotsPath = path.join(outDir, 'robots.txt');
 if (!fs.existsSync(robotsPath)) {
   fs.writeFileSync(
     robotsPath,
-    `User-agent: *\nAllow: /\n\nUser-agent: GPTBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: https://lumenstudio.app/sitemap.xml\n`,
+    `User-agent: *\nAllow: /\n\nUser-agent: GPTBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: https://makefacelessvideos.com/sitemap.xml\n`,
     'utf8',
   );
 }

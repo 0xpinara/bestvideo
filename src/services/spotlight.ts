@@ -15,7 +15,10 @@
  * touching the call sites.
  */
 
+import { APP_URL } from '../config/urls';
 import type { Project } from './types';
+
+const APP_BASE = APP_URL.replace(/\/$/, '');
 
 type SearchableItem = {
   uniqueIdentifier: string;
@@ -44,7 +47,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'AI Video Maker',
     contentDescription: 'Turn a sentence into a finished cinematic video',
     keywords: ['ai video', 'text to video', 'video generator', 'video maker', 'ai', 'sora', 'veo'],
-    url: 'https://lumenstudio.app/ai-video-maker',
+    url: `${APP_BASE}/ai-video-maker`,
   },
   {
     uniqueIdentifier: 'feature.faceless-video-maker',
@@ -52,7 +55,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Faceless Video Maker',
     contentDescription: 'Generate narrated faceless videos with B-roll and captions',
     keywords: ['faceless video', 'youtube shorts', 'tiktok', 'reels', 'narration'],
-    url: 'https://lumenstudio.app/faceless-video-maker',
+    url: `${APP_BASE}/faceless-video-maker`,
   },
   {
     uniqueIdentifier: 'feature.auto-captions',
@@ -60,7 +63,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Auto Captions',
     contentDescription: 'Auto-transcribe and stylise captions in 30+ languages',
     keywords: ['captions', 'subtitles', 'transcribe', 'kinetic', 'karaoke'],
-    url: 'https://lumenstudio.app/auto-captions',
+    url: `${APP_BASE}/auto-captions`,
   },
   {
     uniqueIdentifier: 'feature.ai-dubbing',
@@ -68,7 +71,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'AI Dubbing',
     contentDescription: 'Translate video into 30+ languages while preserving voice',
     keywords: ['dub', 'dubbing', 'translate video', 'voice cloning', 'lip sync'],
-    url: 'https://lumenstudio.app/ai-dubbing',
+    url: `${APP_BASE}/ai-dubbing`,
   },
   {
     uniqueIdentifier: 'feature.ai-voiceover',
@@ -76,7 +79,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'AI Voiceover',
     contentDescription: 'Drop precise multi-segment narration onto any video',
     keywords: ['voiceover', 'narration', 'voice over', 'voice acting'],
-    url: 'https://lumenstudio.app/ai-voiceover',
+    url: `${APP_BASE}/ai-voiceover`,
   },
   {
     uniqueIdentifier: 'feature.video-to-music',
@@ -84,7 +87,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Video to Music',
     contentDescription: 'Auto-score your video by mood, genre and intensity',
     keywords: ['music', 'score', 'soundtrack', 'instrumental'],
-    url: 'https://lumenstudio.app/video-to-music',
+    url: `${APP_BASE}/video-to-music`,
   },
   {
     uniqueIdentifier: 'feature.ai-voice-generator',
@@ -92,7 +95,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'AI Voice Generator',
     contentDescription: 'Studio-grade text to speech with 12+ voices',
     keywords: ['text to speech', 'tts', 'voice generator', 'ai voice'],
-    url: 'https://lumenstudio.app/ai-voice-generator',
+    url: `${APP_BASE}/ai-voice-generator`,
   },
   {
     uniqueIdentifier: 'feature.podcast-generator',
@@ -100,7 +103,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Podcast Generator',
     contentDescription: 'Multi-speaker long-form audio for podcasts and dialogues',
     keywords: ['podcast', 'audiobook', 'dialogue', 'multi speaker'],
-    url: 'https://lumenstudio.app/podcast-generator',
+    url: `${APP_BASE}/podcast-generator`,
   },
   {
     uniqueIdentifier: 'feature.sound-effects',
@@ -108,7 +111,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Sound Effects Generator',
     contentDescription: 'Cinematic sound effects from text descriptions',
     keywords: ['sfx', 'sound effects', 'foley', 'ambience'],
-    url: 'https://lumenstudio.app/sound-effects-generator',
+    url: `${APP_BASE}/sound-effects-generator`,
   },
   {
     uniqueIdentifier: 'feature.voice-changer',
@@ -116,7 +119,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Voice Changer',
     contentDescription: 'Speech-to-speech voice replacement',
     keywords: ['voice changer', 'speech to speech', 'voice swap'],
-    url: 'https://lumenstudio.app/voice-changer',
+    url: `${APP_BASE}/voice-changer`,
   },
   {
     uniqueIdentifier: 'feature.voice-isolator',
@@ -124,7 +127,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Voice Isolator',
     contentDescription: 'Separate vocals from background noise',
     keywords: ['voice isolator', 'noise removal', 'stem separation'],
-    url: 'https://lumenstudio.app/voice-isolator',
+    url: `${APP_BASE}/voice-isolator`,
   },
   {
     uniqueIdentifier: 'feature.transcribe',
@@ -132,7 +135,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Transcribe (Speech to Text)',
     contentDescription: 'Studio-grade speech recognition in 90+ languages',
     keywords: ['transcribe', 'speech to text', 'subtitles', 'srt'],
-    url: 'https://lumenstudio.app/speech-to-text',
+    url: `${APP_BASE}/speech-to-text`,
   },
   {
     uniqueIdentifier: 'feature.music-generator',
@@ -140,7 +143,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'AI Music Generator',
     contentDescription: 'Full songs with vocals from a text prompt',
     keywords: ['ai music', 'song generator', 'suno', 'udio', 'text to song'],
-    url: 'https://lumenstudio.app/ai-music-generator',
+    url: `${APP_BASE}/ai-music-generator`,
   },
   {
     uniqueIdentifier: 'feature.voice-design',
@@ -148,7 +151,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Voice Design',
     contentDescription: 'Invent new AI voices from a text description',
     keywords: ['voice design', 'text to voice', 'voice generator'],
-    url: 'https://lumenstudio.app/voice-design',
+    url: `${APP_BASE}/voice-design`,
   },
   {
     uniqueIdentifier: 'feature.voice-agent',
@@ -156,7 +159,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Voice Agents',
     contentDescription: 'Conversational AI you can call or embed',
     keywords: ['voice agent', 'chatbot', 'conversational ai'],
-    url: 'https://lumenstudio.app/voice-agent',
+    url: `${APP_BASE}/voice-agent`,
   },
   {
     uniqueIdentifier: 'feature.audio-native',
@@ -164,7 +167,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Audio Native',
     contentDescription: 'Embeddable audio player that narrates any article',
     keywords: ['audio native', 'article to audio', 'narration', 'embed'],
-    url: 'https://lumenstudio.app/audio-native',
+    url: `${APP_BASE}/audio-native`,
   },
   {
     uniqueIdentifier: 'feature.voice-library',
@@ -172,7 +175,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Voice Library',
     contentDescription: 'Browse 1000s of community and designed voices',
     keywords: ['voice library', 'community voices', 'voices'],
-    url: 'https://lumenstudio.app/voice-library',
+    url: `${APP_BASE}/voice-library`,
   },
   {
     uniqueIdentifier: 'feature.ai-avatar',
@@ -180,7 +183,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'AI Avatar',
     contentDescription: 'Photo-real talking-head video from a photo and script',
     keywords: ['ai avatar', 'talking head', 'heygen', 'synthesia'],
-    url: 'https://lumenstudio.app/ai-avatar',
+    url: `${APP_BASE}/ai-avatar`,
   },
   {
     uniqueIdentifier: 'feature.video-translate',
@@ -188,7 +191,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Translate Video',
     contentDescription: 'Translate any video with lip-sync and cloned voice',
     keywords: ['translate video', 'video dubbing', 'lip sync', 'localisation'],
-    url: 'https://lumenstudio.app/translate-video',
+    url: `${APP_BASE}/translate-video`,
   },
   {
     uniqueIdentifier: 'feature.lip-sync',
@@ -196,7 +199,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Lip Sync',
     contentDescription: 'Drive a face video with replacement audio',
     keywords: ['lip sync', 'lipsync', 'face sync'],
-    url: 'https://lumenstudio.app/lip-sync',
+    url: `${APP_BASE}/lip-sync`,
   },
   {
     uniqueIdentifier: 'feature.video-extend',
@@ -204,7 +207,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Extend Video',
     contentDescription: 'Continue any clip naturally for several seconds',
     keywords: ['extend video', 'video continuation', 'loop video'],
-    url: 'https://lumenstudio.app/extend-video',
+    url: `${APP_BASE}/extend-video`,
   },
   {
     uniqueIdentifier: 'feature.background-remove',
@@ -212,7 +215,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Background Remover',
     contentDescription: 'Cut your subject out of any video, transparent or greenscreen',
     keywords: ['background remover', 'green screen', 'rotoscope'],
-    url: 'https://lumenstudio.app/background-remover',
+    url: `${APP_BASE}/background-remover`,
   },
   {
     uniqueIdentifier: 'feature.inpaint',
@@ -220,7 +223,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Inpaint Video',
     contentDescription: 'Remove or replace anything in a video',
     keywords: ['inpaint', 'remove object', 'video edit'],
-    url: 'https://lumenstudio.app/inpaint-video',
+    url: `${APP_BASE}/inpaint-video`,
   },
   {
     uniqueIdentifier: 'feature.pikaffect',
@@ -228,7 +231,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Video Effects',
     contentDescription: 'One-tap viral effects: melt, crush, explode, glow',
     keywords: ['video effects', 'pikaffects', 'viral effects'],
-    url: 'https://lumenstudio.app/video-effects',
+    url: `${APP_BASE}/video-effects`,
   },
   {
     uniqueIdentifier: 'feature.storyboard',
@@ -236,7 +239,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'Storyboard',
     contentDescription: 'Multi-shot consistent scenes for film and ads',
     keywords: ['storyboard', 'multi shot', 'scene planner'],
-    url: 'https://lumenstudio.app/storyboard',
+    url: `${APP_BASE}/storyboard`,
   },
   {
     uniqueIdentifier: 'feature.image-gen',
@@ -244,7 +247,7 @@ const FEATURE_INDEXABLES: SearchableItem[] = [
     title: 'AI Image Generator',
     contentDescription: 'Flux, Imagen 3, Stable Diffusion, Midjourney v7 in one app',
     keywords: ['ai image', 'midjourney', 'flux', 'imagen', 'stable diffusion'],
-    url: 'https://lumenstudio.app/ai-image-generator',
+    url: `${APP_BASE}/ai-image-generator`,
   },
 ];
 
@@ -272,10 +275,10 @@ export async function indexProject(p: Project): Promise<void> {
         uniqueIdentifier: `project.${p.id}`,
         domain: 'projects',
         title: p.title,
-        contentDescription: `${kindLabel(p.kind)} · Lumen Studio`,
+        contentDescription: `${kindLabel(p.kind)} · Make Faceless Videos`,
         thumbnailUri: p.thumbUri,
-        keywords: [kindLabel(p.kind), 'lumen', 'project', ...p.title.toLowerCase().split(/\s+/)],
-        url: `https://lumenstudio.app/project/${p.id}`,
+        keywords: [kindLabel(p.kind), 'faceless video', 'project', ...p.title.toLowerCase().split(/\s+/)],
+        url: `${APP_BASE}/project/${p.id}`,
       },
     ]);
   } catch {}

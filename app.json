@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Lumen Studio",
-    "slug": "lumen-studio",
-    "scheme": "lumen",
+    "name": "Make Faceless Videos",
+    "slug": "make-faceless-videos",
+    "scheme": "mfv",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,24 +15,25 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.lumenstudio.app",
+      "bundleIdentifier": "com.makefacelessvideos.app",
       "associatedDomains": [
-        "applinks:lumenstudio.app",
-        "applinks:www.lumenstudio.app",
-        "activitycontinuation:lumenstudio.app",
-        "webcredentials:lumenstudio.app"
+        "applinks:makefacelessvideos.com",
+        "applinks:www.makefacelessvideos.com",
+        "applinks:app.makefacelessvideos.com",
+        "activitycontinuation:app.makefacelessvideos.com",
+        "webcredentials:makefacelessvideos.com"
       ],
       "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "Lumen uses your photos so you can upload videos and frames to generate from.",
+        "NSPhotoLibraryUsageDescription": "Make Faceless Videos uses your photos so you can upload videos and frames to generate from.",
         "NSPhotoLibraryAddUsageDescription": "Save generated videos and audio to your library.",
         "NSMicrophoneUsageDescription": "Record reference audio for voice cloning.",
-        "CFBundleSpokenName": "Lumen Studio",
-        "CFBundleDisplayName": "Lumen",
+        "CFBundleSpokenName": "Make Faceless Videos",
+        "CFBundleDisplayName": "Faceless",
         "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": "com.lumenstudio.app",
+      "package": "com.makefacelessvideos.app",
       "adaptiveIcon": {
         "backgroundColor": "#FAF4EC",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -53,12 +54,17 @@
           "data": [
             {
               "scheme": "https",
-              "host": "lumenstudio.app",
+              "host": "makefacelessvideos.com",
               "pathPrefix": "/"
             },
             {
               "scheme": "https",
-              "host": "www.lumenstudio.app",
+              "host": "www.makefacelessvideos.com",
+              "pathPrefix": "/"
+            },
+            {
+              "scheme": "https",
+              "host": "app.makefacelessvideos.com",
               "pathPrefix": "/"
             }
           ],
@@ -71,7 +77,7 @@
           "action": "VIEW",
           "data": [
             {
-              "scheme": "lumen"
+              "scheme": "mfv"
             }
           ],
           "category": [
@@ -85,7 +91,7 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "Lumen uses your photos so you can upload videos and frames."
+          "photosPermission": "Make Faceless Videos uses your photos so you can upload videos and frames."
         }
       ],
       "expo-secure-store",
@@ -102,9 +108,9 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro",
       "output": "single",
-      "name": "Lumen Studio · AI Video, Voice, Music & Avatars",
-      "shortName": "Lumen",
-      "description": "AI video maker, voice generator, music, dubbing, captions, AI avatars and more — all in one beautiful app.",
+      "name": "Make Faceless Videos · AI Faceless Video Maker",
+      "shortName": "Faceless",
+      "description": "Make faceless videos with AI — script to narrated short with captions, voiceover, music, and dubbing. Free to start on web, iOS, and Android.",
       "themeColor": "#FAF4EC",
       "backgroundColor": "#FAF4EC",
       "lang": "en",
@@ -113,9 +119,9 @@
       "preferRelatedApplications": true
     },
     "extra": {
-      "marketingUrl": "https://lumenstudio.app",
-      "supportUrl": "https://lumenstudio.app/support",
-      "privacyUrl": "https://lumenstudio.app/privacy"
+      "marketingUrl": "https://makefacelessvideos.com",
+      "supportUrl": "https://makefacelessvideos.com/legal/support.html",
+      "privacyUrl": "https://makefacelessvideos.com/legal/privacy.html"
     }
   }
 }

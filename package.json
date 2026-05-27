@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "build:web": "expo export --platform web --output-dir dist && node scripts/enrich-web-html.js dist",
     "preview:web": "npx --yes serve dist",
-    "build:site": "node scripts/build-articles.js",
+    "build:site": "node scripts/sync-site-urls.js && node scripts/build-articles.js && node scripts/inject-site-bridge.js && node scripts/generate-sitemap.js",
     "preview:site": "npx --yes serve site -p 4180 --no-clipboard"
   },
   "dependencies": {

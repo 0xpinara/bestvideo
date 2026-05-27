@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Linking, Platform, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import { AppHeader, Avatar, Button, Card, Screen, SectionHeader, Text } from '../components';
+import { MARKETING_URL } from '../config/urls';
 import { palette, spacing } from '../theme';
 import { useTheme } from '../theme/ThemeContext';
 import type { RootStackParamList } from '../navigation/types';
@@ -23,7 +24,7 @@ export const ProfileScreen: React.FC = () => {
         <View style={styles.row}>
           <Avatar initials="GS" size={56} />
           <View style={{ flex: 1, marginLeft: spacing.md }}>
-            <Text variant="h3">Ghibli Studio</Text>
+            <Text variant="h3">Make Faceless Videos</Text>
             <Text variant="bodySm" color="textMuted">
               Free plan · 45 credits remaining
             </Text>
@@ -48,6 +49,14 @@ export const ProfileScreen: React.FC = () => {
         />
         <Row icon="cloud-download-outline" title="Downloads" subtitle="Files saved to your device" onPress={() => {}} />
         <Row icon="shield-checkmark-outline" title="Privacy" subtitle="What we store and what we don't" onPress={() => {}} />
+        {Platform.OS === 'web' ? (
+          <Row
+            icon="globe-outline"
+            title="Website"
+            subtitle="Tutorials, pricing, and articles"
+            onPress={() => Linking.openURL(MARKETING_URL)}
+          />
+        ) : null}
         <Row icon="document-text-outline" title="Terms & licenses" subtitle="The small print" onPress={() => {}} />
       </View>
 
