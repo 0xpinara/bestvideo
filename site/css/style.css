@@ -149,11 +149,17 @@ section.tight { padding: 56px 0; }
 }
 .brand:hover { color: var(--ink) !important; }
 .brand-mark {
-  width: 32px; height: 32px; border-radius: 10px;
-  background: linear-gradient(135deg, var(--peach), var(--terracotta));
-  display: grid; place-items: center; color: #fff;
-  font-family: var(--serif); font-weight: 700; font-size: 18px;
-  box-shadow: var(--shadow-soft);
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: inline-block;
+  background-image: url('/assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(122, 90, 46, 0.18);
 }
 .nav-links { display: flex; align-items: center; gap: 22px; }
 .nav-links a { color: var(--ink-soft); font-weight: 500; font-size: 15px; }
