@@ -148,6 +148,7 @@ section.tight { padding: 56px 0; }
   font-weight: 700; color: var(--ink) !important; font-size: 17px;
 }
 .brand:hover { color: var(--ink) !important; }
+.site-header .brand-mark { display: none; }
 .brand-mark {
   width: 34px;
   height: 34px;
